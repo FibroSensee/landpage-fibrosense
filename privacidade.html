@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de Privacidade do FibroSense - Conformidade com a LGPD e proteção dos seus dados.">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <title>Privacidade | FibroSense</title>
+    
+    <!-- Performance: Preconnect e DNS-prefetch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="./assets">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS inline para FCP rápido -->
+    <style>
+        .header,.btn,.logo{display:block}
+        .btn-primary{background:#6D4AFF;color:#fff;padding:16px 32px;border-radius:9999px}
+        .skip-link{position:absolute;top:-40px;left:0;background:#6D4AFF;color:#fff;padding:4px 8px;z-index:2000}
+        .skip-link:focus{top:0;outline:3px solid #fff;outline-offset:-3px}
+    </style>
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- CSS Específico para páginas de conteúdo -->
+    <style>
+        .legal-page { padding-top: 120px; padding-bottom: var(--space-xxl); background: var(--bg-main); }
+        .legal-header { text-align: center; max-width: 800px; margin: 0 auto var(--space-xl); }
+        .legal-header h1 { font-size: var(--text-4xl); margin-bottom: var(--space-sm); }
+        .legal-header .last-update { color: var(--text-secondary); font-size: var(--text-sm); }
+        .legal-content { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: var(--bg-surface); 
+            padding: var(--space-xl); 
+            border-radius: var(--radius-lg); 
+            box-shadow: var(--shadow-sm);
+            line-height: 1.8;
+        }
+        .legal-content h2 { font-size: var(--text-2xl); margin: var(--space-lg) 0 var(--space-sm); color: var(--text-primary); }
+        .legal-content h3 { font-size: var(--text-xl); margin: var(--space-md) 0 var(--space-xs); color: var(--text-primary); }
+        .legal-content p { margin-bottom: var(--space-sm); color: var(--text-secondary); }
+        .legal-content ul { margin: var(--space-sm) 0 var(--space-md) var(--space-lg); color: var(--text-secondary); }
+        .legal-content li { margin-bottom: var(--space-xxs); }
+        .legal-content a { color: var(--color-primary); font-weight: 500; }
+        .legal-content a:hover { text-decoration: underline; }
+        .toc { 
+            background: rgba(109, 74, 255, 0.05); 
+            padding: var(--space-lg); 
+            border-radius: var(--radius-md); 
+            margin-bottom: var(--space-xl);
+            border-left: 3px solid var(--color-primary);
+        }
+        .toc h3 { font-size: var(--text-lg); margin-bottom: var(--space-sm); }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin-bottom: var(--space-xxs); }
+        .toc a { color: var(--text-primary); font-size: var(--text-sm); text-decoration: none; }
+        .toc a:hover { color: var(--color-primary); }
+        .contact-box {
+            background: linear-gradient(135deg, rgba(109,74,255,0.1), rgba(166,141,184,0.1));
+            padding: var(--space-lg);
+            border-radius: var(--radius-md);
+            margin-top: var(--space-xl);
+            text-align: center;
+        }
+        .contact-box p { margin: 0 0 var(--space-sm); }
+        .contact-box strong { color: var(--color-primary); }
+        .back-link { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: var(--space-xxs); 
+            margin-bottom: var(--space-lg); 
+            color: var(--text-primary); 
+            font-weight: 500; 
+            text-decoration: none;
+        }
+        .back-link:hover { color: var(--color-primary); }
+        .back-link::before { content: '←'; }
+        
+        @media (max-width: 768px) {
+            .legal-page { padding-top: 100px; }
+            .legal-content { padding: var(--space-lg); margin: 0 var(--space-md); }
+            .legal-header h1 { font-size: var(--text-3xl); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link para acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+
+    <!-- Header Simplificado para páginas legais -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="FibroSense - Página inicial">
+                <img src="./assets/logo_fibrosense.png" alt="FibroSense Logo" class="logo-img">
+                <span class="logo-text">Fibro<span>Sense</span></span>
+            </a>
+            <nav>
+                <a href="index.html" class="btn btn-secondary btn-sm">Voltar ao app</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="legal-page">
+        <article class="container">
+            <header class="legal-header">
+                <a href="index.html" class="back-link">Voltar para o FibroSense</a>
+                <h1>Política de Privacidade</h1>
+                <p class="last-update">Última atualização: 28 de maio de 2026</p>
+            </header>
+
+            <div class="legal-content">
+                <!-- Índice -->
+                <nav class="toc" aria-label="Índice da política de privacidade">
+                    <h3>📑 Navegue pelos tópicos</h3>
+                    <ul>
+                        <li><a href="#intro">1. Introdução</a></li>
+                        <li><a href="#dados">2. Quais dados coletamos</a></li>
+                        <li><a href="#uso">3. Como usamos seus dados</a></li>
+                        <li><a href="#compartilhamento">4. Compartilhamento de dados</a></li>
+                        <li><a href="#seguranca">5. Segurança e armazenamento</a></li>
+                        <li><a href="#direitos">6. Seus direitos (LGPD)</a></li>
+                        <li><a href="#cookies">7. Cookies e tecnologias similares</a></li>
+                        <li><a href="#criancas">8. Proteção de crianças e adolescentes</a></li>
+                        <li><a href="#alteracoes">9. Alterações nesta política</a></li>
+                        <li><a href="#contato">10. Contato do Encarregado (DPO)</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Conteúdo -->
+                <section id="intro">
+                    <h2>1. Introdução</h2>
+                    <p>A <strong>FibroSense</strong> ("nós", "nosso") é comprometida com a proteção da sua privacidade e com o tratamento transparente dos seus dados pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong>.</p>
+                    <p>Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos as informações que você nos fornece ao utilizar nosso aplicativo e serviços.</p>
+                </section>
+
+                <section id="dados">
+                    <h2>2. Quais dados coletamos</h2>
+                    <p>Coletamos apenas os dados estritamente necessários para fornecer e melhorar nossos serviços:</p>
+                    
+                    <h3>📋 Dados fornecidos por você:</h3>
+                    <ul>
+                        <li><strong>Perfil:</strong> Nome, e-mail, data de nascimento (opcional)</li>
+                        <li><strong>Sintomas:</strong> Registro de dor, fadiga, humor, qualidade do sono e gatilhos</li>
+                        <li><strong>Preferências:</strong> Configurações de notificação, tema e privacidade</li>
+                        <li><strong>Comunicação:</strong> Mensagens enviadas ao suporte ou em comunidades</li>
+                    </ul>
+
+                    <h3>⌚ Dados coletados automaticamente:</h3>
+                    <ul>
+                        <li><strong>Dispositivo:</strong> Modelo, sistema operacional, idioma e identificadores anônimos</li>
+                        <li><strong>Uso:</strong> Funcionalidades acessadas, tempo de sessão e interações (anonimizados)</li>
+                        <li><strong>Smartwatch:</strong> Frequência cardíaca, passos, sono e atividade física (mediante sua autorização)</li>
+                        <li><strong>Localização aproximada:</strong> Apenas para sugerir profissionais de saúde próximos (opcional)</li>
+                    </ul>
+
+                    <h3>🚫 Dados que NÃO coletamos:</h3>
+                    <ul>
+                        <li>Senhas de outras contas ou aplicativos</li>
+                        <li>Conteúdo de mensagens privadas de terceiros</li>
+                        <li>Dados biométricos para identificação</li>
+                        <li>Informações financeiras completas (apenas token de pagamento processado por terceiros)</li>
+                    </ul>
+                </section>
+
+                <section id="uso">
+                    <h2>3. Como usamos seus dados</h2>
+                    <p>Seus dados são utilizados exclusivamente para:</p>
+                    <ul>
+                        <li>✅ Fornecer, personalizar e melhorar os recursos do FibroSense</li>
+                        <li>✅ Gerar insights e relatórios sobre seus padrões de sintomas</li>
+                        <li>✅ Enviar notificações relevantes sobre sua saúde (com sua permissão)</li>
+                        <li>✅ Compartilhar relatórios com profissionais de saúde <strong>apenas quando você autorizar</strong></li>
+                        <li>✅ Cumprir obrigações legais e responder a solicitações de autoridades</li>
+                        <li>✅ Prevenir fraudes e garantir a segurança da plataforma</li>
+                    </ul>
+                    <p><strong>Nunca vendemos, alugamos ou comercializamos seus dados pessoais.</strong></p>
+                </section>
+
+                <section id="compartilhamento">
+                    <h2>4. Compartilhamento de dados</h2>
+                    <p>Seus dados podem ser compartilhados apenas nas seguintes situações:</p>
+                    
+                    <h3>👨‍⚕️ Com sua autorização expressa:</h3>
+                    <ul>
+                        <li>Profissionais de saúde que você adicionar como "contatos de confiança"</li>
+                        <li>Exportação de relatórios em PDF para levar a consultas</li>
+                    </ul>
+
+                    <h3>🔧 Com prestadores de serviços (operadores):</h3>
+                    <ul>
+                        <li>Hospedagem em nuvem (ex: AWS, Google Cloud) — dados criptografados</li>
+                        <li>Processamento de pagamentos (ex: Stripe, Pagar.me) — sem acesso a dados de saúde</li>
+                        <li>Ferramentas de analytics anonimizados (ex: Google Analytics 4 com IP anonymized)</li>
+                    </ul>
+
+                    <h3>⚖️ Por exigência legal:</h3>
+                    <ul>
+                        <li>Quando requisitado por autoridade competente, dentro dos limites da lei</li>
+                        <li>Para proteger direitos, propriedade ou segurança da FibroSense ou de usuários</li>
+                    </ul>
+                </section>
+
+                <section id="seguranca">
+                    <h2>5. Segurança e armazenamento</h2>
+                    <p>Adotamos medidas técnicas e organizacionais robustas para proteger seus dados:</p>
+                    <ul>
+                        <li>🔐 <strong>Criptografia:</strong> Dados em trânsito (TLS 1.3) e em repouso (AES-256)</li>
+                        <li>🗝️ <strong>Autenticação:</strong> Login seguro com opção de 2FA (em desenvolvimento)</li>
+                        <li>🧹 <strong>Minimização:</strong> Coletamos apenas o estritamente necessário</li>
+                        <li>🌍 <strong>Localização:</strong> Servidores localizados no Brasil ou em países com adequação à LGPD</li>
+                        <li>🗑️ <strong>Retenção:</strong> Dados são mantidos enquanto sua conta estiver ativa. Após exclusão, são anonimizados ou apagados em até 30 dias</li>
+                    </ul>
+                </section>
+
+                <section id="direitos">
+                    <h2>6. Seus direitos (LGPD)</h2>
+                    <p>Como titular de dados, você tem direito a:</p>
+                    <ul>
+                        <li>✍️ <strong>Confirmação e acesso:</strong> Saber se tratamos seus dados e solicitá-los</li>
+                        <li>✏️ <strong>Correção:</strong> Atualizar dados incompletos, inexatos ou desatualizados</li>
+                        <li>🗑️ <strong>Exclusão:</strong> Solicitar a eliminação de dados tratados com seu consentimento</li>
+                        <li>🔒 <strong>Portabilidade:</strong> Receber seus dados em formato estruturado e interoperável</li>
+                        <li>🚫 <strong>Revogação:</strong> Retirar seu consentimento a qualquer momento</li>
+                        <li>❓ <strong>Informação:</strong> Saber com quem compartilhamos seus dados</li>
+                        <li>♻️ <strong>Oposição:</strong> Opor-se a tratamentos baseados em legítimo interesse</li>
+                    </ul>
+                    <p>Para exercer seus direitos, entre em contato com nosso Encarregado de Dados (DPO) na seção <a href="#contato">Contato</a> abaixo.</p>
+                </section>
+
+                <section id="cookies">
+                    <h2>7. Cookies e tecnologias similares</h2>
+                    <p>Utilizamos cookies e tecnologias similares para:</p>
+                    <ul>
+                        <li>🔹 <strong>Essenciais:</strong> Manter sua sessão ativa e garantir segurança (não podem ser desativados)</li>
+                        <li>🔹 <strong>Preferências:</strong> Lembrar idioma, tema e configurações</li>
+                        <li>🔹 <strong>Analytics:</strong> Entender como o app é usado para melhorias (anonimizados)</li>
+                        <li>🔹 <strong>Marketing:</strong> <em>Não utilizamos</em> cookies de rastreamento para publicidade direcionada</li>
+                    </ul>
+                    <p>Você pode gerenciar cookies nas configurações do seu navegador ou dispositivo. No app, acesse <strong>Configurações &gt; Privacidade &gt; Cookies</strong>.</p>
+                </section>
+
+                <section id="criancas">
+                    <h2>8. Proteção de crianças e adolescentes</h2>
+                    <p>O FibroSense é direcionado a maiores de 18 anos. Não coletamos intencionalmente dados de menores sem consentimento parental verificável, conforme o art. 14 da LGPD.</p>
+                    <p>Caso identifiquemos tratamento de dados de menores sem autorização, excluiremos as informações imediatamente. Se você é responsável por um menor e acredita que ele nos forneceu dados, entre em contato conosco.</p>
+                </section>
+
+                <section id="alteracoes">
+                    <h2>9. Alterações nesta política</h2>
+                    <p>Podemos atualizar esta Política de Privacidade periodicamente. Quando houver mudanças relevantes:</p>
+                    <ul>
+                        <li>📢 Notificaremos você no app e/ou por e-mail</li>
+                        <li>📅 Atualizaremos a data de "Última atualização" no topo desta página</li>
+                        <li>✅ Solicitaremos novo consentimento, quando exigido por lei</li>
+                    </ul>
+                    <p>O uso continuado do FibroSense após as alterações implica na aceitação das novas práticas.</p>
+                </section>
+
+                <section id="contato">
+                    <h2>10. Contato do Encarregado (DPO)</h2>
+                    <p>Para exercer seus direitos, tirar dúvidas sobre privacidade ou reportar incidentes, entre em contato com nosso Encarregado de Proteção de Dados:</p>
+                    
+                    <div class="contact-box">
+                        <p><strong>Encarregado de Dados (DPO)</strong><br>
+                        FibroSense Tecnologia e Saúde Ltda.</p>
+                        <p>📧 <a href="mailto:privacidade@fibrosense.com.br">privacidade@fibrosense.com.br</a><br>
+                        📬 Caixa Postal 12345, São Paulo - SP, CEP 01000-000</p>
+                        <p><small>Respondemos em até 5 (cinco) dias úteis, conforme a LGPD.</small></p>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer Simplificado -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-bottom" style="justify-content: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: var(--space-lg);">
+                <p>&copy; 2026 FibroSense. Todos os direitos reservados.</p>
+                <nav class="footer-legal" aria-label="Links legais">
+                    <a href="privacidade.html">Privacidade</a>
+                    <a href="termos.html">Termos</a>
+                    <a href="index.html#contato">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

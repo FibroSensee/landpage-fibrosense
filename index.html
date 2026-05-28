@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FibroSense: seu diário inteligente para entender e gerenciar a fibromialgia com empatia e tecnologia.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <meta name="theme-color" content="#6D4AFF">
+    
+    <title>FibroSense | Você é maior que sua dor</title>
+    
+    <!-- Performance: Preconnect e DNS-prefetch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="./assets">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS inline para FCP rápido -->
+    <style>
+        .header,.hero,.btn,.logo{display:block}
+        .btn-primary{background:#6D4AFF;color:#fff;padding:16px 32px;border-radius:9999px}
+        .skip-link{position:absolute;top:-40px;left:0;background:#6D4AFF;color:#fff;padding:4px 8px;z-index:2000}
+        .skip-link:focus{top:0;outline:3px solid #fff;outline-offset:-3px}
+    </style>
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip Link para acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+
+    <!-- Cookie Banner (AGORA DENTRO DO BODY ✅) -->
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="cookie-banner" hidden>
+    <p>Usamos cookies essenciais para o funcionamento do app. <a href="privacidade.html#cookies">Saiba mais</a></p>
+    <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Aceitar</button>
+</div>
+
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="FibroSense - Página inicial">
+                <img src="assets/logo_fibrosense.png" alt="FibroSense Logo" class="logo-img">
+                <span class="logo-text">Fibro<span>Sense</span></span>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks" role="navigation" aria-label="Menu principal">
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#depoimento">Depoimentos</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#planos" class="btn btn-primary btn-sm">Baixar App</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge">💜 Tecnologia com empatia</span>
+                    <h1 id="hero-title">Você é <span class="highlight">maior</span> que sua dor.</h1>
+                    <p class="hero-lead">O FibroSense é seu diário inteligente para entender e gerenciar a fibromialgia. Monitoramento via smartwatch, insights personalizados e apoio humano — tudo em um só lugar.</p>
+                    <div class="hero-cta">
+                        <a href="#planos" class="btn btn-primary">Começar gratuitamente</a>
+                        <a href="#como-funciona" class="btn btn-secondary">Ver como funciona</a>
+                    </div>
+                    <div class="hero-trust" role="status" aria-live="polite">
+                        <div class="trust-badge"><strong>95%</strong><span>dos usuários acreditam que ajuda no acompanhamento</span></div>
+                        <div class="trust-badge"><strong>LGPD</strong><span>Seus dados protegidos com segurança</span></div>
+                    </div>
+                </div>
+                <div class="hero-mockup">
+                    <div class="real-mockup">
+                        <img src="assets/tela-home.png" alt="Tela inicial do aplicativo FibroSense" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botão de Emergência Flutuante (Mobile) -->
+        <div class="emergency-cta" role="region" aria-label="Acesso rápido a emergência">
+            <a href="#funcionalidades" class="btn btn-emergency" aria-label="Precisa de ajuda agora? Acesse recursos de emergência">
+                <span class="pulse-icon" aria-hidden="true">🆘</span>
+                Ajuda agora
+            </a>
+        </div>
+
+        <!-- PROVA SOCIAL -->
+        <section class="section social-proof" aria-labelledby="proof-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="proof-title">Resultados que inspiram confiança</h2>
+                    <p>Dados reais de usuários que transformaram sua jornada com a fibromialgia.</p>
+                </div>
+                <div class="proof-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">acreditam que o app ajuda no acompanhamento clínico</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section class="section how-it-works" id="como-funciona" aria-labelledby="how-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">✨ Simples e intuitivo</span>
+                    <h2 id="how-title">Como o FibroSense cuida de você</h2>
+                    <p>Três passos para transformar sua relação com a fibromialgia.</p>
+                </div>
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Registre seus sintomas</h3>
+                        <p>Anote dor, sono, humor e fadiga em segundos. Nosso mapa corporal torna o registro intuitivo.</p>
+                    </article>
+                    <article class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Conecte seu smartwatch</h3>
+                        <p>Monitoramento automático de frequência cardíaca, sono e atividade física em tempo real.</p>
+                    </article>
+                    <article class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Compartilhe com seu médico</h3>
+                        <p>Relatórios claros e objetivos para consultas mais produtivas e tratamentos personalizados.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FUNCIONALIDADES -->
+        <section class="section feature-section" id="funcionalidades" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="features-title">Tudo que você precisa, em um só lugar</h2>
+                    <p>Ferramentas pensadas para sua realidade, com carinho e precisão.</p>
+                </div>
+
+                <!-- Feature 1: Insights -->
+                <div class="feature-grid">
+                    <div class="feature-content">
+                        <span class="badge">📊 Insights inteligentes</span>
+                        <h2>Entenda seus padrões de sintomas</h2>
+                        <p>Acompanhe a evolução da sua dor, fadiga, humor e qualidade do sono com gráficos claros e objetivos. Identifique gatilhos e celebre pequenas vitórias no seu caminho.</p>
+                        <ul class="list-check feature-list">
+                            <li>Visualize tendências diárias, semanais e mensais</li>
+                            <li>Receba alertas personalizados sobre padrões recorrentes</li>
+                            <li>Exporte relatórios em PDF para compartilhar com seu médico</li>
+                        </ul>
+                        <a href="#planos" class="btn btn-secondary">Experimentar agora</a>
+                    </div>
+                    <div class="feature-image">
+                        <div class="real-mockup feature-mockup">
+                            <img src="assets/tela-sintomas.png" alt="Dashboard de sintomas do FibroSense" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Mapa corporal -->
+                <div class="feature-grid reverse">
+                    <div class="feature-content">
+                        <span class="badge">📍 Precisão emocional</span>
+                        <h2>O mapa do seu corpo, na ponta dos dedos</h2>
+                        <p>Registre onde a dor se manifesta com um mapa interativo e sensível. Visualize a evolução dos sintomas e comunique-se melhor com quem cuida de você.</p>
+                        <ul class="list-check feature-list">
+                            <li>Toque para registrar intensidade em cada região</li>
+                            <li>Veja histórico de manifestações por área do corpo</li>
+                            <li>Compartilhe visualizações claras com sua equipe de saúde</li>
+                        </ul>
+                        <a href="#planos" class="btn btn-secondary">Ver demonstração</a>
+                    </div>
+                    <div class="feature-image">
+                        <div class="real-mockup feature-mockup">
+                            <img src="assets/tela-mapa.png" alt="Mapa corporal do FibroSense" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Apoio com destaque para emergência -->
+                <div class="feature-grid">
+                    <div class="feature-content">
+                        <span class="badge">🆘 Segurança em primeiro lugar</span>
+                        <h2>Apoio imediato quando você mais precisa</h2>
+                        <p>Em momentos de crise, um toque é suficiente para acessar recursos de emergência, contatos de confiança e técnicas de acolhimento validadas por especialistas.</p>
+                        <ul class="list-check feature-list">
+                            <li><strong>Botão de emergência</strong> com acesso rápido a contatos</li>
+                            <li>Exercícios de respiração e grounding para momentos difíceis</li>
+                            <li>Integração com serviços de saúde locais (em desenvolvimento)</li>
+                        </ul>
+                        <a href="#planos" class="btn btn-secondary">Conhecer recursos</a>
+                    </div>
+                    <div class="feature-image">
+                        <div class="real-mockup feature-mockup">
+                            <img src="assets/botao.png" alt="Interface de apoio emocional do FibroSense" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE / MVV -->
+        <section class="section" id="sobre" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="about-title">Nossa essência</h2>
+                    <p>Tudo que fazemos é pensado no seu bem-estar, com empatia e respeito.</p>
+                </div>
+                <div class="mvv-grid">
+                    <article class="card mvv-card">
+                        <div class="mvv-icon">🌱</div>
+                        <h3>Missão</h3>
+                        <p>Empoderar pessoas a compreenderem seus sintomas e gerenciarem sua saúde no dia a dia, com autonomia e acolhimento.</p>
+                    </article>
+                    <article class="card mvv-card">
+                        <div class="mvv-icon">🤝</div>
+                        <h3>Visão</h3>
+                        <p>Usar a tecnologia para conectar pacientes, profissionais e cuidadores em uma rede de apoio humana e inteligente.</p>
+                    </article>
+                    <article class="card mvv-card">
+                        <div class="mvv-icon">❤️</div>
+                        <h3>Valores</h3>
+                        <p>Empatia, acessibilidade e cuidado humano como pilares fundamentais de cada decisão que tomamos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- LGPD & PRIVACIDADE -->
+        <section class="section privacy-section" aria-labelledby="privacy-title">
+            <div class="container">
+                <div class="privacy-card">
+                    <div class="privacy-icon" aria-hidden="true">🔒</div>
+                    <div class="privacy-content">
+                        <h3 id="privacy-title">Seus dados são seus. E protegidos.</h3>
+                        <p>Coletamos apenas o necessário para cuidar de você: <strong>sintomas, sono e atividade física</strong>. Tudo é criptografado, anonimizado para análises e <strong>nunca vendido</strong>. Você controla o que compartilhar e pode excluir seus dados a qualquer momento.</p>
+                        <!-- ✅ LINK CORRIGIDO: sem barra inicial, com .html -->
+                        <a href="privacidade.html" class="privacy-link">Ler política de privacidade completa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLANOS -->
+        <section class="section" id="planos" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="pricing-title">Planos que se adaptam a você</h2>
+                    <p>Opções flexíveis para pacientes e profissionais de saúde.</p>
+                </div>
+                <div class="pricing-grid">
+                    <article class="card plan-card">
+                        <h3 class="plan-name">FibroFree</h3>
+                        <div class="plan-price"><span class="amount free">Grátis</span></div>
+                        <p class="plan-description">
+                            <strong>Ideal para:</strong> Quem quer registrar sintomas sem compromisso
+                            <span class="plan-guarantee">✓ Cancele quando quiser</span>
+                        </p>
+                        <ul class="list-check plan-features">
+                            <li>Registro ilimitado de sintomas</li>
+                            <li>Mapa corporal interativo</li>
+                            <li>Monitoramento básico de sono</li>
+                            <li>Relatórios mensais simples</li>
+                            <li>Comunidade de apoio</li>
+                        </ul>
+                        <div class="plan-cta"><a href="#" class="btn btn-secondary btn-full">Começar grátis</a></div>
+                    </article>
+                    <article class="card plan-card card-featured">
+                        <span class="comparison-badge">⭐ Mais escolhido</span>
+                        <h3 class="plan-name">SensePro</h3>
+                        <div class="plan-price"><span class="amount">R$ 24,90</span><span class="period">/mês</span></div>
+                        <p class="plan-description">
+                            <strong>Ideal para:</strong> Acompanhamento contínuo com médico
+                            <span class="plan-guarantee">✓ 7 dias de teste grátis</span>
+                        </p>
+                        <ul class="list-check plan-features">
+                            <li><strong>Tudo do FibroFree, mais:</strong></li>
+                            <li>Relatórios avançados com insights</li>
+                            <li>Dados em tempo real do smartwatch</li>
+                            <li>Envio direto de relatórios para médicos</li>
+                            <li>Análise histórica de padrões</li>
+                            <li>Suporte prioritário por chat</li>
+                        </ul>
+                        <div class="plan-cta"><a href="#" class="btn btn-primary btn-full">Assinar SensePro</a></div>
+                    </article>
+                    <article class="card plan-card">
+                        <h3 class="plan-name">SensePro+</h3>
+                        <div class="plan-price"><span class="amount">R$ 190</span><span class="period">/ano</span></div>
+                        <p class="plan-description">
+                            <strong>Economize:</strong> 2 meses grátis no plano anual
+                            <span class="plan-guarantee">✓ Reembolso em 30 dias</span>
+                        </p>
+                        <ul class="list-check plan-features">
+                            <li><strong>Tudo do SensePro, mais:</strong></li>
+                            <li>Acesso para até 3 profissionais de saúde</li>
+                            <li>Relatórios personalizados para clínicas</li>
+                            <li>Suporte dedicado por e-mail</li>
+                            <li>Atualizações antecipadas de recursos</li>
+                        </ul>
+                        <div class="plan-cta"><a href="#" class="btn btn-secondary btn-full">Assinar anual</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTO -->
+        <section class="section testimonial-section" id="depoimento" aria-labelledby="testimonial-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="testimonial-title">Quem vive, sabe</h2>
+                    <p>O relato que inspirou cada linha de código do FibroSense.</p>
+                </div>
+                <blockquote class="testimonial-card">
+                    <p class="testimonial-quote">"Eu só queria que um abraço não doesse tanto. O FibroSense me entende e me ajuda a sentir que não estou sozinha. Pela primeira vez, sinto que tenho controle sobre minha jornada."</p>
+                    <footer class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">DO</div>
+                        <div class="author-info">
+                            <strong>Daniela Oliveira</strong>
+                            <span>Usuária FibroSense há 8 meses</span>
+                        </div>
+                    </footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-final" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title">Pronta para transformar sua jornada?</h2>
+                <p>Junte-se a centenas de pessoas que já estão cuidando de si com mais clareza, apoio e tecnologia humana.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-lg">Baixar app gratuitamente</a>
+                    <a href="#planos" class="btn btn-secondary btn-lg">Ver planos</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo" aria-label="FibroSense - Página inicial">
+                        <img src="assets/logo_fibrosense.png" alt="FibroSense Logo" class="logo-img footer-logo-img">
+                        <span class="logo-text">Fibro<span>Sense</span></span>
+                    </a>
+                    <p>Tecnologia com empatia para quem vive com fibromialgia. Você é maior que sua dor.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Produto</h4>
+                    <ul>
+                        <li><a href="#como-funciona">Como funciona</a></li>
+                        <li><a href="#funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#planos">Planos e preços</a></li>
+                        <li><a href="atualizacoes.html">Novidades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="equipe.html">Nossa equipe</a></li>
+                        <li><a href="carreiras.html">Trabalhe conosco</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <!-- ✅ LINKS CORRIGIDOS: sem barra inicial, com .html -->
+                        <li><a href="privacidade.html" aria-label="Política de Privacidade - LGPD">Privacidade (LGPD)</a></li>
+                        <li><a href="termos.html">Termos de uso</a></li>
+                        <li><a href="privacidade.html#cookies">Política de cookies</a></li>
+                        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FibroSense. Todos os direitos reservados.</p>
+                <nav class="footer-legal" aria-label="Links legais">
+                    <!-- ✅ LINKS CORRIGIDOS -->
+                    <a href="privacidade.html">Privacidade</a>
+                    <a href="termos.html">Termos</a>
+                    <a href="#contato">Contato</a>
+                    <a href="mailto:oi@fibrosense.com.br">oi@fibrosense.com.br</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
